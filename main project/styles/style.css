@@ -9,6 +9,8 @@ body {
   background: rgb(221 , 216, 196);
   overflow-x: hidden;
   overflow-y: overlay;
+  position: absolute;
+  width: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -549,10 +551,13 @@ margin-top: 10px;
 
 .articles {
   color:#DDD8C4;
-  width: 240px;
+  width: 260px;
   animation-name: articles-appear;
   animation-duration: 3s;
+  min-width: 100px;
 }
+
+
 
 .articles-container {
   width: 80%;
@@ -627,3 +632,21 @@ margin-top: 10px;
   }
   
 }
+
+@media (max-width: 940px) {
+  .articles h3 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .articles p {
+    font-size: 10px;
+    text-align: center;
+  }
+  .articles {
+    margin-right: 10px;
+  }
+  .links {
+    width:25px;
+  }
+  
+  }
