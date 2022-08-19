@@ -8,7 +8,29 @@ body {
   font-family: 'Open Sans', sans-serif;
   background: rgb(221 , 216, 196);
   overflow-x: hidden;
-  
+  overflow-y: overlay;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;           /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: none;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #08090c;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 1px solid #ddd8c4;  /* creates padding around scroll thumb */
+}
+
+body::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-track-piece:end {
+  background: transparent;
 }
 
 nav {
@@ -25,6 +47,35 @@ background-attachment: fixed;
 /*************************
 HEADER SECTION
 ************************/
+
+@media screen and (max-width: 1100px) {
+  .about-us-article {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .about-us-article {
+    margin-left: 150px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .about-us-article {
+    margin-left: 50px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .about-us-article {
+    margin-left: 25px;
+    margin-right: 0;
+  }
+}
+
 
 #logo-image {
 position: absolute;
@@ -156,6 +207,8 @@ background-color: #a2a2a2;
   
   
 }
+
+
 
 .about-us-article {
   font-size: 22px;
