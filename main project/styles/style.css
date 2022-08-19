@@ -9,6 +9,8 @@ body {
     background: rgb(221 , 216, 196);
     overflow-x: hidden;
     overflow-y: overlay;
+    position: absolute;
+    width: 100%;
 }
 
 nav {
@@ -451,132 +453,155 @@ input[type="submit"]:hover {
 /* footer by vlad*/
 
 .footer-container {
-    background-color: #50808E;
-    width: 100%;
-    height: 80%;
-    position: sticky;
-    top:0;
+  background-color: #50808E;
+  width: 100%;
+  height: 80%;
+  position: sticky;
+  bottom: 0;
 
 }
 
 .footer-intro {
-    text-align: center;
-    padding-top: 30px;
+  text-align: center;
+  padding-top: 30px;
 }
 
 
 .footer-container h1, h2{
-    color: #DDD8C4;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  color: #DDD8C4;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .footer-container h1 {
-    font-size: 56px;
-    position: relative;
-    animation-name: first-text;
-    animation-duration: 1.5s;
+  font-size: 56px;
+  position: relative;
+  animation-name: first-text;
+  animation-duration: 1.5s;
 }
 
 .footer-container h2 {
-    position: relative;
-    animation-name: second-text;
-    animation-duration: 1.5s;
+  position: relative;
+  animation-name: second-text;
+  animation-duration: 1.5s;
 }
 
 .footer-container h3{
-    font-size: 44px;
-    color: #A3C9A8;
+  font-size: 44px;
+  color: #A3C9A8;
+  height: 60px;
 }
 
 .footer-container hr{
-    width: 80%;
-    height: 1px;
-    border: none;
-    margin:auto;
-    background-color:#DDD8C4;
-    opacity: 0.5;
-    margin-top: 80px;
-    margin-bottom: 80px;
+  width: 80%;
+  height: 1px;
+  border: none;
+  margin:auto;
+  background-color:#DDD8C4;
+  opacity: 0.5;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .articles {
-    color:#DDD8C4;
-    width: 240px;
-    animation-name: articles-appear;
-    animation-duration: 3s;
+  color:#DDD8C4;
+  width: 240px;
+  animation-name: articles-appear;
+  animation-duration: 3s;
+  min-width: 100px;
 }
 
+
+
 .articles-container {
-    width: 80%;
-    margin:auto;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
+  width: 80%;
+  margin:auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .articles h3 {
-    margin-bottom: 20px;
-    font-size: 32px;
+  margin-bottom: 20px;
+  font-size: 32px;
 }
 
+
 .links {
-    width: 50px;
-    margin-left: 15px;
-    cursor: pointer;
-    transition: .1s ease-in-out;
-    animation-name: articles-appear;
-    animation-duration: 3s;
+  width: 50px;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: .1s ease-in-out;
+  animation-name: articles-appear;
+  animation-duration: 3s;
 }
 
 .links:hover {
-    transform: scale(1.3,1.3);
-   
+  transform: scale(1.3,1.3);
+ 
 }
 
 .links-container {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 @keyframes first-text {
-    from  {
-        opacity: 0;
-        left:800px; 
-        top:0px;
-    }
-    to {
-        opacity: 1;
-        left:0px; 
-        top:0px;
-    }
+  from  {
+      opacity: 0;
+      left:800px; 
+      top:0px;
+  }
+  to {
+      opacity: 1;
+      left:0px; 
+      top:0px;
+  }
 }
 
 @keyframes second-text {
-    from   {
-        opacity: 0; 
-        right:800px; 
-        top:0px;
-    }
-    to {
-        opacity: 1; 
-        right:0px; 
-        top:0px;
-    }
+  from   {
+      opacity: 0; 
+      right:800px; 
+      top:0px;
+  }
+  to {
+      opacity: 1; 
+      right:0px; 
+      top:0px;
+  }
 }
 
 @keyframes articles-appear {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-    
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+  
+}
+
+@media (max-width: 940px) {
+.articles h3 {
+  font-size: 22px;
+  text-align: center;
+}
+.articles p {
+  font-size: 10px;
+  text-align: center;
+}
+.articles {
+  margin-right: 10px;
+}
+.links {
+  width:25px;
+}
+
 }
