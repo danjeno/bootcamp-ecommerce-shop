@@ -8,7 +8,138 @@ body {
     font-family: 'Open Sans', sans-serif;
     background: rgb(221 , 216, 196);
     overflow-x: hidden;
+    
 }
+
+nav {
+  height: 70px;
+  padding: 25px;
+}
+
+header {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*************************
+HEADER SECTION
+************************/
+
+#logo-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#logo-text {
+  float: left;
+}
+
+#logo-text a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #171717;
+  letter-spacing: 8px;
+  padding-left: 30px;
+  margin-left: 50px;
+}
+
+.nav-links {
+  float: right;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 30px;
+  
+}
+
+.nav-links li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #171717;
+}
+
+.nav-links li a:link,
+.nav-links li a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #171717;
+  opacity: 0.7;
+}
+.nav-links li a:hover,
+.nav-links li a:active {
+  opacity: 1;
+}
+
+#sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #a3c9a8;
+  z-index: 999;
+  box-shadow: 0 2px 2px #eae3e3;
+}
+
+#header-text {
+  padding-top: 150px;
+}
+
+#header-title {
+  margin-left: 160px;
+  padding: 10px;
+  text-transform: uppercase;
+  color: #171717;
+  letter-spacing: 0.179487em;
+  font-size: 3vw;
+  line-height: 1vw;
+  font-weight: 400;
+  
+}
+
+#header-buttons {
+  margin-top: 20px;
+  margin-left: 8.33%;
+  padding: 15px;
+}
+
+.button,
+input[type="submit"] {
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #171717;
+  font-weight: 300;
+  border-radius: 150px;
+  transition: background-color 0.8s, border 0.8s;
+}
+
+.button-order {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+.button-order:hover,
+input[type="submit"]:hover {
+  background-color: #a2a2a2;
+}
+
+.button-more {
+  border: 1px solid #fff;
+}
+
+.button-more:hover {
+  background-color: #a2a2a2;
+}
+
 
 /* ABOUT US SECTION START */
 .about-us-header {
@@ -16,16 +147,17 @@ body {
     margin-left: 150px;
     font-size: 56px;
     
+    
 }
 
 .about-us-article {
     font-size: 22px;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 350px;
+    margin-left: 160px;
     margin-right: 350px;
     position: justify;
-    text-align: center;
+    text-align: left;
 
     -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
